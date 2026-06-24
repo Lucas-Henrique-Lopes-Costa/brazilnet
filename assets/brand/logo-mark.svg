@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BrazilNet">
+  <circle cx="60" cy="60" r="60" fill="#3DA8A8"/>
+  <g transform="translate(60 48)" stroke="#EDF1F0" stroke-width="2.4" fill="none">
+    <circle r="20"/>
+    <ellipse rx="8.5" ry="20"/>
+    <line x1="-20" y1="0" x2="20" y2="0"/>
+    <path d="M-18.7 -7 H18.7" />
+    <path d="M-18.7 7 H18.7" />
+  </g>
+  <g fill="#EDF1F0" transform="translate(0 92)">
+    <text x="60" y="0" text-anchor="middle" font-family="'Sora','Segoe UI',sans-serif" font-weight="700" font-size="22" letter-spacing="-0.5">Brazil<tspan font-weight="300">Net</tspan></text>
+  </g>
+</svg>

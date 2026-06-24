@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#0C1716"/>
+
+<!-- Primary Meta -->
+<title>BrazilNet Coworking · Escritório Virtual e Endereço Fiscal na Aldeota, Fortaleza</title>
+<meta name="description" content="Escritório virtual, endereço fiscal e salas de reunião na Aldeota, Fortaleza. Desde 2014 ajudando pequenas e médias empresas a crescer com estrutura profissional a partir de R$100/mês — sem IPTU e com gestão de correspondências."/>
+<meta name="keywords" content="escritório virtual Fortaleza, endereço fiscal Aldeota, coworking Fortaleza, sala de reunião, BrazilNet, endereço comercial CNPJ"/>
+<meta name="author" content="BrazilNet Coworking"/>
+<link rel="canonical" href="https://www.brazilnetcoworking.com.br/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:site_name" content="BrazilNet Coworking"/>
+<meta property="og:title" content="BrazilNet Coworking · Escritório Virtual e Endereço Fiscal na Aldeota"/>
+<meta property="og:description" content="Endereço comercial profissional na Aldeota a partir de R$100/mês. Sem IPTU, com gestão de correspondências e salas de reunião. Desde 2014 em Fortaleza."/>
+<meta property="og:image" content="assets/img/meeting-03.webp"/>
+<meta property="og:url" content="https://www.brazilnetcoworking.com.br/"/>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="BrazilNet Coworking · Escritório Virtual na Aldeota"/>
+<meta name="twitter:description" content="Endereço fiscal e escritório virtual em Fortaleza a partir de R$100/mês."/>
+<meta name="twitter:image" content="assets/img/meeting-03.webp"/>
+
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg"/>
+<link rel="apple-touch-icon" href="assets/brand/favicon.svg"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- No-JS fallback: never hide content if scripts fail/disabled -->
+<noscript><style>[data-aos]{opacity:1!important;transform:none!important;}</style></noscript>
+
+<!-- AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!-- GLightbox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { DEFAULT: '#3DA8A8', light: '#5FC6C6', deep: '#2A7E7E', glow: '#79DEDE' },
+          ink: { DEFAULT: '#0C1716', soft: '#10201F', card: '#14302E' },
+          cream: '#F4F7F6'
+        },
+        fontFamily: {
+          display: ['Sora', 'sans-serif'],
+          body: ['Manrope', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+:root{
+  --brand:#3DA8A8; --brand-light:#5FC6C6; --brand-deep:#2A7E7E; --brand-glow:#79DEDE;
+  --ink:#0C1716; --ink-soft:#10201F; --ink-card:#14302E; --cream:#F4F7F6;
+}
+*{ -webkit-font-smoothing:antialiased; }
+html{ scroll-behavior:smooth; }
+body{
+  background:var(--ink);
+  color:var(--cream);
+  font-family:'Manrope',sans-serif;
+  margin:0; overflow-x:hidden;
+}
+.font-display{ font-family:'Sora',sans-serif; }
+::selection{ background:var(--brand); color:#04100f; }
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar{ width:10px; }
+::-webkit-scrollbar-track{ background:#081110; }
+::-webkit-scrollbar-thumb{ background:linear-gradient(var(--brand-deep),var(--brand)); border-radius:10px; }
+
+/* ---------- Aurora / glow backdrop ---------- */
+.aurora{ position:absolute; border-radius:50%; filter:blur(90px); opacity:.5; pointer-events:none; z-index:0; }
+
+/* ---------- Glass ---------- */
+.glass{
+  background:rgba(20,48,46,.45);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border:1px solid rgba(95,198,198,.16);
+}
+.glass-nav{
+  background:rgba(8,17,16,.55);
+  backdrop-filter:blur(14px) saturate(160%);
+  -webkit-backdrop-filter:blur(14px) saturate(160%);
+}
+
+/* ---------- Gradient text ---------- */
+.text-gradient{
+  background:linear-gradient(120deg,#EAFBFB 0%, var(--brand-glow) 55%, var(--brand) 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+
+/* ---------- Buttons ---------- */
+.btn{ position:relative; overflow:hidden; transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.btn:hover{ transform:translateY(-3px); }
+.btn-primary{
+  background:linear-gradient(120deg,var(--brand) 0%, var(--brand-deep) 100%);
+  color:#04100f; box-shadow:0 12px 34px -12px rgba(61,168,168,.7);
+}
+.btn-primary:hover{ box-shadow:0 18px 44px -10px rgba(95,198,198,.85); }
+.btn-primary::after{
+  content:''; position:absolute; top:0; left:-120%; width:60%; height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.45),transparent);
+  transform:skewX(-20deg); transition:left .7s;
+}
+.btn-primary:hover::after{ left:140%; }
+.btn-ghost{ border:1px solid rgba(95,198,198,.4); color:var(--cream); }
+.btn-ghost:hover{ border-color:var(--brand-light); background:rgba(61,168,168,.1); }
+
+/* ---------- Section heading kicker ---------- */
+.kicker{
+  display:inline-flex; align-items:center; gap:.6rem;
+  font-size:.72rem; letter-spacing:.32em; text-transform:uppercase;
+  color:var(--brand-light); font-weight:600;
+}
+.kicker::before{ content:''; width:34px; height:1px; background:linear-gradient(90deg,transparent,var(--brand)); }
+
+/* ---------- Service / feature cards ---------- */
+.feature-card{
+  position:relative; border-radius:20px; overflow:hidden;
+  background:linear-gradient(160deg, rgba(20,48,46,.6), rgba(12,23,22,.6));
+  border:1px solid rgba(95,198,198,.12);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1), border-color .5s, box-shadow .5s;
+}
+.feature-card::before{
+  content:''; position:absolute; inset:0; opacity:0; transition:opacity .5s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%), rgba(95,198,198,.18), transparent 60%);
+}
+.feature-card:hover{ transform:translateY(-8px); border-color:rgba(95,198,198,.4); box-shadow:0 30px 60px -30px rgba(0,0,0,.8); }
+.feature-card:hover::before{ opacity:1; }
+.feature-icon{
+  width:56px; height:56px; border-radius:14px; display:grid; place-items:center;
+  background:linear-gradient(150deg, rgba(95,198,198,.18), rgba(61,168,168,.06));
+  border:1px solid rgba(95,198,198,.2); color:var(--brand-glow);
+  transition:transform .5s, background .5s;
+}
+.feature-card:hover .feature-icon{ transform:scale(1.08) rotate(-4deg); background:linear-gradient(150deg, rgba(95,198,198,.32), rgba(61,168,168,.12)); }
+
+/* ---------- Gallery ---------- */
+.gallery-item{ position:relative; overflow:hidden; border-radius:16px; display:block; }
+.gallery-item img{ transition:transform 1.1s cubic-bezier(.2,.8,.2,1), filter .6s; width:100%; height:100%; object-fit:cover; }
+.gallery-item:hover img{ transform:scale(1.08); filter:saturate(1.1); }
+.gallery-item .g-overlay{
+  position:absolute; inset:0; display:flex; align-items:flex-end; padding:1.25rem;
+  background:linear-gradient(to top, rgba(6,16,15,.85), transparent 55%);
+  opacity:0; transition:opacity .5s;
+}
+.gallery-item:hover .g-overlay{ opacity:1; }
+
+/* ---------- Timeline ---------- */
+.tl-line{ background:linear-gradient(180deg,var(--brand) 0%, rgba(61,168,168,.1) 100%); }
+
+/* ---------- Marquee ---------- */
+.marquee{ display:flex; gap:4rem; white-space:nowrap; animation:marq 28s linear infinite; }
+@keyframes marq{ to{ transform:translateX(-50%); } }
+
+/* ---------- Reveal helper (used w/ GSAP fallback) ---------- */
+.will-reveal{ opacity:0; transform:translateY(28px); }
+
+/* ---------- Swiper testimonials ---------- */
+.swiper-pagination-bullet{ background:var(--brand-light)!important; }
+.swiper-pagination-bullet-active{ background:var(--brand-glow)!important; width:22px!important; border-radius:4px!important; }
+
+/* ---------- Floating whatsapp ---------- */
+.wa-float{
+  position:fixed; right:20px; bottom:22px; z-index:80;
+  width:60px; height:60px; border-radius:50%; display:grid; place-items:center;
+  background:linear-gradient(150deg,#25D366,#128C7E); color:#fff;
+  box-shadow:0 14px 34px -8px rgba(37,211,102,.6);
+  transition:transform .35s;
+}
+.wa-float:hover{ transform:scale(1.08) translateY(-2px); }
+.wa-float::after{
+  content:''; position:absolute; inset:0; border-radius:50%;
+  border:2px solid rgba(37,211,102,.6); animation:pulse 2s infinite;
+}
+@keyframes pulse{ 0%{ transform:scale(1); opacity:.8;} 100%{ transform:scale(1.7); opacity:0;} }
+
+/* ---------- Forms ---------- */
+.field{
+  width:100%; background:rgba(8,17,16,.6); border:1px solid rgba(95,198,198,.18);
+  border-radius:12px; padding:.85rem 1rem; color:var(--cream); font-size:.95rem;
+  transition:border-color .3s, box-shadow .3s;
+}
+.field::placeholder{ color:rgba(244,247,246,.4); }
+.field:focus{ outline:none; border-color:var(--brand-light); box-shadow:0 0 0 3px rgba(95,198,198,.15); }
+
+/* ---------- Nav links underline ---------- */
+.nav-link{ position:relative; }
+.nav-link::after{
+  content:''; position:absolute; left:0; bottom:-4px; height:1.5px; width:0;
+  background:var(--brand-light); transition:width .35s;
+}
+.nav-link:hover::after{ width:100%; }
+
+/* ---------- Stat number ---------- */
+.stat-num{ font-variant-numeric:tabular-nums; }
+
+/* ---------- Mobile menu ---------- */
+#mobileMenu{ transition:opacity .4s, transform .4s; }
+#mobileMenu.hidden-menu{ opacity:0; pointer-events:none; transform:translateY(-12px); }
+
+@media (max-width:768px){
+  .marquee{ gap:2rem; }
+}
+</style>
+</head>
+<body class="font-body">
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/5585989568807?text=Ol%C3%A1!%20Tenho%20interesse%20no%20escrit%C3%B3rio%20virtual%20da%20BrazilNet." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.519zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <nav class="max-w-7xl mx-auto px-5 md:px-8 py-4 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-3 group">
+      <span class="relative grid place-items-center w-10 h-10 rounded-full" style="background:linear-gradient(150deg,#3DA8A8,#2A7E7E)">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#EDF1F0" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M4.5 7.5h15M4.5 16.5h15"/></svg>
+      </span>
+      <span class="font-display font-bold text-lg tracking-tight leading-none">Brazil<span class="font-light text-brand-light">Net</span><span class="block text-[9px] tracking-[0.3em] font-body font-medium text-cream/45 uppercase mt-0.5">Escritório Virtual</span></span>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-9 text-sm text-cream/75">
+      <a href="#servicos" class="nav-link hover:text-cream transition-colors">Serviços</a>
+      <a href="#vantagens" class="nav-link hover:text-cream transition-colors">Vantagens</a>
+      <a href="#galeria" class="nav-link hover:text-cream transition-colors">Espaços</a>
+      <a href="#sobre" class="nav-link hover:text-cream transition-colors">Sobre</a>
+      <a href="#depoimentos" class="nav-link hover:text-cream transition-colors">Depoimentos</a>
+      <a href="#contato" class="nav-link hover:text-cream transition-colors">Contato</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/5585989568807" target="_blank" rel="noopener" class="hidden sm:inline-flex btn btn-primary text-sm font-semibold px-5 py-2.5 rounded-full">Fale conosco</a>
+      <button id="menuBtn" class="lg:hidden grid place-items-center w-10 h-10 rounded-lg glass" aria-label="Abrir menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden-menu lg:hidden glass-nav border-t border-brand/10 px-6 py-6 flex flex-col gap-4 text-cream/80">
+    <a href="#servicos" class="mob-link py-1">Serviços</a>
+    <a href="#vantagens" class="mob-link py-1">Vantagens</a>
+    <a href="#galeria" class="mob-link py-1">Espaços</a>
+    <a href="#sobre" class="mob-link py-1">Sobre</a>
+    <a href="#depoimentos" class="mob-link py-1">Depoimentos</a>
+    <a href="#contato" class="mob-link py-1">Contato</a>
+    <a href="https://wa.me/5585989568807" target="_blank" rel="noopener" class="btn btn-primary text-center font-semibold px-5 py-3 rounded-full mt-2">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+  <!-- background image w/ parallax -->
+  <div class="absolute inset-0 z-0">
+    <img id="heroImg" src="assets/img/meeting-03.webp" alt="Sala de reunião da BrazilNet Coworking na Aldeota, Fortaleza" class="w-full h-[120%] object-cover scale-105"/>
+    <div class="absolute inset-0" style="background:linear-gradient(110deg, rgba(6,16,15,.95) 0%, rgba(8,22,21,.82) 42%, rgba(8,22,21,.55) 100%)"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(to top, var(--ink) 2%, transparent 40%)"></div>
+  </div>
+  <div class="aurora" style="width:520px;height:520px;background:var(--brand);top:-120px;right:-120px;"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 w-full pt-28 pb-20">
+    <div class="max-w-3xl">
+      <span class="kicker mb-6 hero-el" data-d="0">Desde 2014 · Aldeota, Fortaleza</span>
+      <h1 class="font-display font-extrabold leading-[1.02] tracking-tight text-[2.7rem] sm:text-6xl lg:text-7xl mt-5">
+        <span class="block hero-line">Um endereço</span>
+        <span class="block hero-line text-gradient">à altura da</span>
+        <span class="block hero-line">sua empresa.</span>
+      </h1>
+      <p class="mt-7 text-lg md:text-xl text-cream/70 font-light max-w-xl hero-el" data-d="1">
+        Escritório virtual, endereço fiscal e salas de reunião com estrutura profissional — a partir de <span class="text-brand-light font-medium">R$100/mês</span>, sem IPTU e com toda a sua correspondência gerenciada.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-4 hero-el" data-d="2">
+        <a href="https://wa.me/5585989568807?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20escrit%C3%B3rio%20virtual." target="_blank" rel="noopener" class="btn btn-primary font-semibold px-7 py-4 rounded-full inline-flex items-center gap-2.5">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+          Solicitar proposta
+        </a>
+        <a href="#galeria" class="btn btn-ghost font-semibold px-7 py-4 rounded-full inline-flex items-center gap-2.5">
+          Conhecer os espaços
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <!-- HERO STATS -->
+      <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl hero-el" data-d="3">
+        <div>
+          <div class="font-display font-bold text-3xl md:text-4xl text-cream stat-num"><span class="count" data-to="2014" data-sep="">0</span></div>
+          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">Desde</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-3xl md:text-4xl text-cream stat-num">R$<span class="count" data-to="100">0</span></div>
+          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">Endereço/mês</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-3xl md:text-4xl text-cream stat-num"><span class="count" data-to="10">0</span>º</div>
+          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">Andar · Aldeota</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-3xl md:text-4xl text-brand-light stat-num">0</div>
+          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">IPTU a pagar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scroll cue -->
+  <a href="#parceiros" class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-cream/40 hover:text-cream/80 transition-colors">
+    <span class="text-[10px] uppercase tracking-[0.3em]">Role</span>
+    <span class="w-5 h-8 rounded-full border border-cream/25 flex justify-center pt-1.5"><span class="w-1 h-1.5 rounded-full bg-brand-light animate-bounce"></span></span>
+  </a>
+</section>
+
+<!-- ============ TRUST / MARQUEE BAR ============ -->
+<section id="parceiros" class="relative py-7 border-y border-brand/10 bg-ink-soft/40 overflow-hidden">
+  <div class="marquee text-cream/35 font-display font-medium text-sm uppercase tracking-[0.25em]">
+    <span>Endereço Fiscal</span><span class="text-brand/60">◆</span>
+    <span>Escritório Virtual</span><span class="text-brand/60">◆</span>
+    <span>Salas de Reunião</span><span class="text-brand/60">◆</span>
+    <span>Gestão de Correspondências</span><span class="text-brand/60">◆</span>
+    <span>Sem IPTU</span><span class="text-brand/60">◆</span>
+    <span>Licenças Imediatas</span><span class="text-brand/60">◆</span>
+    <span>Endereço Fiscal</span><span class="text-brand/60">◆</span>
+    <span>Escritório Virtual</span><span class="text-brand/60">◆</span>
+    <span>Salas de Reunião</span><span class="text-brand/60">◆</span>
+    <span>Gestão de Correspondências</span><span class="text-brand/60">◆</span>
+    <span>Sem IPTU</span><span class="text-brand/60">◆</span>
+    <span>Licenças Imediatas</span><span class="text-brand/60">◆</span>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section id="servicos" class="relative py-24 md:py-32 overflow-hidden">
+  <div class="aurora" style="width:460px;height:460px;background:var(--brand-deep);top:10%;left:-180px;opacity:.35;"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="max-w-2xl" data-aos="fade-up">
+      <span class="kicker mb-5">O que oferecemos</span>
+      <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tight mt-4">Soluções completas para <span class="text-gradient">profissionalizar</span> o seu negócio</h2>
+      <p class="mt-5 text-cream/60 text-lg font-light">Tudo o que a sua empresa precisa para ter presença, credibilidade e estrutura — sem o custo de manter um escritório próprio.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
+      <!-- card -->
+      <div class="feature-card p-7" data-aos="fade-up" data-aos-delay="0">
+        <div class="feature-icon mb-6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.2-7-11a7 7 0 1114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+        <h3 class="font-display font-semibold text-xl">Endereço Fiscal</h3>
+        <p class="mt-3 text-cream/60 text-sm leading-relaxed">Registre e dê credibilidade ao seu CNPJ com um endereço comercial na Aldeota, a partir de R$100/mês.</p>
+        <span class="inline-block mt-5 text-xs font-semibold text-brand-light tracking-wide">A partir de R$100/mês →</span>
+      </div>
+      <div class="feature-card p-7" data-aos="fade-up" data-aos-delay="60">
+        <div class="feature-icon mb-6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 18v3M16 18v3M5 21h14"/></svg></div>
+        <h3 class="font-display font-semibold text-xl">Escritório Virtual</h3>
+        <p class="mt-3 text-cream/60 text-sm leading-relaxed">Presença profissional completa: endereço, recepção de correspondências e estrutura de apoio quando precisar.</p>
+        <span class="inline-block mt-5 text-xs font-semibold text-brand-light tracking-wide">Comodidade e economia →</span>
+      </div>
+      <div class="feature-card p-7" data-aos="fade-up" data-aos-delay="120">
+        <div class="feature-icon mb-6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v12H5.2L4 17.2V4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3 class="font-display font-semibold text-xl">Gestão de Correspondências</h3>
+        <p class="mt-3 text-cream/60 text-sm leading-relaxed">Recebemos, organizamos e avisamos sobre cada correspondência e encomenda destinada à sua empresa.</p>
+        <span class="inline-block mt-5 text-xs font-semibold text-brand-light tracking-wide">Nada se perde →</span>
+      </div>
+      <div class="feature-card p-7" data-aos="fade-up" data-aos-delay="0">
+        <div class="feature-icon mb-6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="11" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></div>
+        <h3 class="font-display font-semibold text-xl">Salas de Reunião</h3>
+        <p class="mt-3 text-cream/60 text-sm leading-relaxed">Salas climatizadas, equipadas com TV e estrutura para receber clientes e parceiros com profissionalismo.</p>
+        <span class="inline-block mt-5 text-xs font-semibold text-brand-light tracking-wide">Preço sob consulta →</span>
+      </div>
+      <div class="feature-card p-7" data-aos="fade-up" data-aos-delay="60">
+        <div class="feature-icon mb-6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div>
+        <h3 class="font-display font-semibold text-xl">Salas Privativas</h3>
+        <p class="mt-3 text-cream/60 text-sm leading-relaxed">Escritórios privativos prontos para uso, com mobiliário, internet e toda a infraestrutura para trabalhar.</p>
+        <span class="inline-block mt-5 text-xs font-semibold text-brand-light tracking-wide">Estrutura pronta →</span>
+      </div>
+      <div class="feature-card p-7" data-aos="fade-up" data-aos-delay="120">
+        <div class="feature-icon mb-6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6l7-3z"/></svg></div>
+        <h3 class="font-display font-semibold text-xl">Licenças Imediatas</h3>
+        <p class="mt-3 text-cream/60 text-sm leading-relaxed">Precisou emitir uma licença? Disponibilizamos a documentação de imediato, sem burocracia que atrase você.</p>
+        <span class="inline-block mt-5 text-xs font-semibold text-brand-light tracking-wide">Agilidade real →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VANTAGENS (split feature) ============ -->
+<section id="vantagens" class="relative py-24 md:py-32 bg-ink-soft/30 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+      <!-- visual -->
+      <div class="relative" data-aos="fade-right">
+        <div class="relative rounded-3xl overflow-hidden border border-brand/15 shadow-2xl">
+          <img src="assets/img/office-02.webp" alt="Escritório privativo equipado da BrazilNet" class="w-full h-[460px] object-cover"/>
+          <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(6,16,15,.6), transparent 60%)"></div>
+        </div>
+        <!-- floating glass stat -->
+        <div class="glass rounded-2xl p-5 absolute -bottom-7 -left-3 md:-left-8 w-56 shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-xs uppercase tracking-wider text-brand-light">Economia mensal</div>
+          <div class="font-display font-bold text-3xl mt-1">até 80%</div>
+          <div class="text-xs text-cream/55 mt-1">frente a um escritório próprio</div>
+        </div>
+        <div class="glass rounded-2xl p-4 absolute -top-5 -right-2 md:-right-6 shadow-xl flex items-center gap-3" data-aos="zoom-in" data-aos-delay="320">
+          <div class="w-9 h-9 rounded-full grid place-items-center bg-brand/20 text-brand-glow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <div class="text-sm font-semibold leading-tight">Sem IPTU<br><span class="text-xs font-normal text-cream/55">no seu custo fixo</span></div>
+        </div>
+      </div>
+
+      <!-- copy -->
+      <div data-aos="fade-left">
+        <span class="kicker mb-5">Por que a BrazilNet</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tight mt-4 leading-[1.08]">Mais credibilidade. <br>Menos custo fixo.</h2>
+        <p class="mt-5 text-cream/60 text-lg font-light">Criada para quem precisa de uma estrutura profissional sem o peso de manter um escritório. Veja o que está incluído:</p>
+
+        <ul class="mt-9 space-y-5">
+          <li class="flex gap-4 items-start adv-item">
+            <span class="shrink-0 w-9 h-9 rounded-xl grid place-items-center bg-brand/15 text-brand-glow border border-brand/25 font-display font-bold">1</span>
+            <div><h4 class="font-semibold text-lg">Endereço fiscal por R$100/mês</h4><p class="text-cream/55 text-sm mt-1">Valor reduzido para registrar sua empresa em um endereço comercial valorizado da Aldeota.</p></div>
+          </li>
+          <li class="flex gap-4 items-start adv-item">
+            <span class="shrink-0 w-9 h-9 rounded-xl grid place-items-center bg-brand/15 text-brand-glow border border-brand/25 font-display font-bold">2</span>
+            <div><h4 class="font-semibold text-lg">Você não paga IPTU</h4><p class="text-cream/55 text-sm mt-1">O imposto fica por nossa conta — uma economia real no seu custo fixo mensal.</p></div>
+          </li>
+          <li class="flex gap-4 items-start adv-item">
+            <span class="shrink-0 w-9 h-9 rounded-xl grid place-items-center bg-brand/15 text-brand-glow border border-brand/25 font-display font-bold">3</span>
+            <div><h4 class="font-semibold text-lg">Licenças emitidas de imediato</h4><p class="text-cream/55 text-sm mt-1">Precisou de uma licença? Disponibilizamos a documentação na hora, sem atrasar seus prazos.</p></div>
+          </li>
+          <li class="flex gap-4 items-start adv-item">
+            <span class="shrink-0 w-9 h-9 rounded-xl grid place-items-center bg-brand/15 text-brand-glow border border-brand/25 font-display font-bold">4</span>
+            <div><h4 class="font-semibold text-lg">Gestão de todas as correspondências</h4><p class="text-cream/55 text-sm mt-1">Recebemos e organizamos tudo o que chega para a sua empresa e avisamos você.</p></div>
+          </li>
+          <li class="flex gap-4 items-start adv-item">
+            <span class="shrink-0 w-9 h-9 rounded-xl grid place-items-center bg-brand/15 text-brand-glow border border-brand/25 font-display font-bold">5</span>
+            <div><h4 class="font-semibold text-lg">Salas de reunião sob consulta</h4><p class="text-cream/55 text-sm mt-1">Reserve salas equipadas para receber clientes quando o seu negócio precisar.</p></div>
+          </li>
+        </ul>
+
+        <a href="https://wa.me/5585989568807" target="_blank" rel="noopener" class="btn btn-primary inline-flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full mt-9">Quero esses benefícios <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section id="galeria" class="relative py-24 md:py-32 overflow-hidden">
+  <div class="aurora" style="width:420px;height:420px;background:var(--brand);bottom:5%;right:-160px;opacity:.3;"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div class="max-w-2xl" data-aos="fade-up">
+        <span class="kicker mb-5">Conheça a estrutura</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tight mt-4">Espaços reais, <span class="text-gradient">prontos para trabalhar</span></h2>
+        <p class="mt-5 text-cream/60 text-lg font-light">Ambientes climatizados, mobiliados e pensados para a produtividade. Clique para ampliar.</p>
+      </div>
+      <a href="#contato" class="hidden md:inline-flex btn btn-ghost font-semibold px-6 py-3 rounded-full" data-aos="fade-up">Agendar visita</a>
+    </div>
+
+    <!-- masonry -->
+    <div class="mt-12 columns-1 sm:columns-2 lg:columns-3 gap-4 [&>*]:mb-4">
+      <a href="assets/img/meeting-03.webp" class="glightbox gallery-item h-[340px]" data-gallery="brazilnet" data-title="Sala de reunião" data-aos="fade-up">
+        <img src="assets/img/meeting-03.webp" alt="Sala de reunião com lousa e climatização"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Sala de reunião · Lousa branca</span></span>
+      </a>
+      <a href="assets/img/office-02.webp" class="glightbox gallery-item h-[440px]" data-gallery="brazilnet" data-title="Escritório privativo" data-aos="fade-up" data-aos-delay="60">
+        <img src="assets/img/office-02.webp" alt="Escritório privativo mobiliado"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Escritório privativo equipado</span></span>
+      </a>
+      <a href="assets/img/meeting-01.webp" class="glightbox gallery-item h-[300px]" data-gallery="brazilnet" data-title="Sala de reunião" data-aos="fade-up" data-aos-delay="120">
+        <img src="assets/img/meeting-01.webp" alt="Sala de reunião com TV"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Sala de reunião · TV e quadro</span></span>
+      </a>
+      <a href="assets/img/office-01.webp" class="glightbox gallery-item h-[320px]" data-gallery="brazilnet" data-title="Estação de trabalho" data-aos="fade-up">
+        <img src="assets/img/office-01.webp" alt="Estação de trabalho privativa com impressora"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Estação de trabalho privativa</span></span>
+      </a>
+      <a href="assets/img/corridor-01.webp" class="glightbox gallery-item h-[300px]" data-gallery="brazilnet" data-title="Salas e circulação" data-aos="fade-up" data-aos-delay="60">
+        <img src="assets/img/corridor-01.webp" alt="Circulação interna e salas privativas"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Salas privativas · Circulação</span></span>
+      </a>
+      <a href="assets/img/meeting-02.webp" class="glightbox gallery-item h-[420px]" data-gallery="brazilnet" data-title="Sala de reunião" data-aos="fade-up" data-aos-delay="120">
+        <img src="assets/img/meeting-02.webp" alt="Sala de reunião com quadro e TV"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Sala de reunião · Privativa</span></span>
+      </a>
+      <a href="assets/img/office-04.webp" class="glightbox gallery-item h-[300px]" data-gallery="brazilnet" data-title="Escritório" data-aos="fade-up">
+        <img src="assets/img/office-04.webp" alt="Escritório privativo compacto"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Escritório compacto</span></span>
+      </a>
+      <a href="assets/img/meeting-04.webp" class="glightbox gallery-item h-[340px]" data-gallery="brazilnet" data-title="Sala de reunião" data-aos="fade-up" data-aos-delay="60">
+        <img src="assets/img/meeting-04.webp" alt="Sala de reunião climatizada"/>
+        <span class="g-overlay"><span class="text-sm font-medium">Sala de reunião climatizada</span></span>
+      </a>
+    </div>
+    <a href="#contato" class="md:hidden mt-8 btn btn-primary w-full text-center font-semibold px-6 py-3.5 rounded-full block">Agendar visita</a>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="relative py-24 md:py-32 bg-ink-soft/30 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="grid lg:grid-cols-12 gap-14 items-start">
+      <!-- left copy -->
+      <div class="lg:col-span-5" data-aos="fade-up">
+        <span class="kicker mb-5">Nossa história</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tight mt-4 leading-[1.08]">Há mais de <span class="text-gradient">10 anos</span> impulsionando pequenas empresas</h2>
+        <p class="mt-6 text-cream/65 text-lg font-light leading-relaxed">A BrazilNet nasceu em 2014 com um propósito claro: ajudar pequenas empresas a se desenvolverem a partir de um espaço e de um endereço profissional. Desde então, oferecemos comodidade e economia para quem quer crescer sem o peso de manter uma estrutura própria.</p>
+        <p class="mt-4 text-cream/55 font-light leading-relaxed">Atendemos donos de pequenas e médias empresas que buscam praticidade na locação e uma imagem profissional sólida para o seu negócio — tudo em um endereço valorizado no coração da Aldeota, em Fortaleza.</p>
+
+        <!-- counters -->
+        <div class="grid grid-cols-3 gap-6 mt-10">
+          <div>
+            <div class="font-display font-bold text-4xl text-cream stat-num">+<span class="count" data-to="10">0</span></div>
+            <div class="text-xs uppercase tracking-wider text-cream/50 mt-1.5">Anos de mercado</div>
+          </div>
+          <div>
+            <div class="font-display font-bold text-4xl text-cream stat-num">+<span class="count" data-to="200">0</span></div>
+            <div class="text-xs uppercase tracking-wider text-cream/50 mt-1.5">Empresas apoiadas</div>
+          </div>
+          <div>
+            <div class="font-display font-bold text-4xl text-cream stat-num"><span class="count" data-to="100">0</span>%</div>
+            <div class="text-xs uppercase tracking-wider text-cream/50 mt-1.5">Foco no cliente</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right timeline + values -->
+      <div class="lg:col-span-7 lg:pl-10">
+        <div class="relative pl-8">
+          <div class="absolute left-[5px] top-2 bottom-2 w-[2px] tl-line rounded-full"></div>
+          <div class="relative mb-9" data-aos="fade-left">
+            <span class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-brand-glow ring-4 ring-brand/20"></span>
+            <div class="text-brand-light font-display font-bold text-lg">2014</div>
+            <h4 class="font-semibold text-lg mt-1">O começo</h4>
+            <p class="text-cream/55 text-sm mt-1">Fundação da BrazilNet com a missão de oferecer endereço e espaço profissional para pequenas empresas darem o primeiro passo.</p>
+          </div>
+          <div class="relative mb-9" data-aos="fade-left" data-aos-delay="80">
+            <span class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-brand-glow ring-4 ring-brand/20"></span>
+            <div class="text-brand-light font-display font-bold text-lg">Crescimento</div>
+            <h4 class="font-semibold text-lg mt-1">Estrutura completa na Aldeota</h4>
+            <p class="text-cream/55 text-sm mt-1">Salas privativas, salas de reunião equipadas e gestão de correspondências em um endereço comercial valorizado.</p>
+          </div>
+          <div class="relative" data-aos="fade-left" data-aos-delay="160">
+            <span class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-brand-glow ring-4 ring-brand/20"></span>
+            <div class="text-brand-light font-display font-bold text-lg">Hoje</div>
+            <h4 class="font-semibold text-lg mt-1">Parceira do seu crescimento</h4>
+            <p class="text-cream/55 text-sm mt-1">Comodidade, economia e credibilidade para empreendedores que querem focar no que importa: fazer o negócio prosperar.</p>
+          </div>
+        </div>
+
+        <!-- mission / values cards -->
+        <div class="grid sm:grid-cols-3 gap-4 mt-10">
+          <div class="glass rounded-2xl p-5" data-aos="zoom-in">
+            <div class="text-brand-glow mb-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></div>
+            <h5 class="font-semibold">Missão</h5>
+            <p class="text-cream/55 text-xs mt-1.5 leading-relaxed">Ajudar empresas a crescer com estrutura profissional acessível.</p>
+          </div>
+          <div class="glass rounded-2xl p-5" data-aos="zoom-in" data-aos-delay="80">
+            <div class="text-brand-glow mb-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-2.8L7 19l1-6-4-4 5.5-.5z"/></svg></div>
+            <h5 class="font-semibold">Valores</h5>
+            <p class="text-cream/55 text-xs mt-1.5 leading-relaxed">Comodidade, transparência e economia em cada detalhe.</p>
+          </div>
+          <div class="glass rounded-2xl p-5" data-aos="zoom-in" data-aos-delay="160">
+            <div class="text-brand-glow mb-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="9" cy="7" r="3.2"/><path d="M16 11a3 3 0 100-6"/><path d="M21 21v-2a4 4 0 00-3-3.8"/></svg></div>
+            <h5 class="font-semibold">Posicionamento</h5>
+            <p class="text-cream/55 text-xs mt-1.5 leading-relaxed">O endereço profissional de quem leva o negócio a sério.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section id="depoimentos" class="relative py-24 md:py-32 overflow-hidden">
+  <div class="aurora" style="width:480px;height:480px;background:var(--brand-deep);top:20%;left:-180px;opacity:.3;"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="kicker mb-5 justify-center">Quem confia na BrazilNet</span>
+      <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tight mt-4">A experiência de quem <span class="text-gradient">cresce com a gente</span></h2>
+    </div>
+
+    <div class="swiper testimonials-swiper mt-14 pb-14">
+      <div class="swiper-wrapper">
+        <!-- slide -->
+        <div class="swiper-slide h-auto">
+          <div class="glass rounded-2xl p-8 h-full flex flex-col">
+            <div class="flex gap-1 text-brand-glow mb-4">★★★★★</div>
+            <p class="text-cream/80 font-light leading-relaxed flex-1">“Resolvi o endereço fiscal da minha empresa sem dor de cabeça e por um valor que cabe no orçamento. Atendimento próximo e estrutura impecável.”</p>
+            <div class="flex items-center gap-3 mt-6 pt-6 border-t border-brand/10">
+              <span class="w-11 h-11 rounded-full grid place-items-center bg-brand/20 text-brand-glow font-display font-bold">RM</span>
+              <div><div class="font-semibold text-sm">Rafael M.</div><div class="text-xs text-cream/50">Consultoria · Cliente desde 2019</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto">
+          <div class="glass rounded-2xl p-8 h-full flex flex-col">
+            <div class="flex gap-1 text-brand-glow mb-4">★★★★★</div>
+            <p class="text-cream/80 font-light leading-relaxed flex-1">“A gestão das correspondências me dá uma tranquilidade enorme. Sempre sou avisada e nada se perde. Recomendo para qualquer pequeno empresário.”</p>
+            <div class="flex items-center gap-3 mt-6 pt-6 border-t border-brand/10">
+              <span class="w-11 h-11 rounded-full grid place-items-center bg-brand/20 text-brand-glow font-display font-bold">CS</span>
+              <div><div class="font-semibold text-sm">Carla S.</div><div class="text-xs text-cream/50">Comércio digital · Aldeota</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto">
+          <div class="glass rounded-2xl p-8 h-full flex flex-col">
+            <div class="flex gap-1 text-brand-glow mb-4">★★★★★</div>
+            <p class="text-cream/80 font-light leading-relaxed flex-1">“Uso as salas de reunião para receber clientes e a impressão é sempre profissional. O endereço na Aldeota agrega muito à minha marca.”</p>
+            <div class="flex items-center gap-3 mt-6 pt-6 border-t border-brand/10">
+              <span class="w-11 h-11 rounded-full grid place-items-center bg-brand/20 text-brand-glow font-display font-bold">JP</span>
+              <div><div class="font-semibold text-sm">João P.</div><div class="text-xs text-cream/50">Advocacia · Cliente desde 2021</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-auto">
+          <div class="glass rounded-2xl p-8 h-full flex flex-col">
+            <div class="flex gap-1 text-brand-glow mb-4">★★★★★</div>
+            <p class="text-cream/80 font-light leading-relaxed flex-1">“Economizei muito ao migrar para o escritório virtual. Não pago IPTU, tenho endereço de respeito e estrutura quando preciso. Valeu cada centavo.”</p>
+            <div class="flex items-center gap-3 mt-6 pt-6 border-t border-brand/10">
+              <span class="w-11 h-11 rounded-full grid place-items-center bg-brand/20 text-brand-glow font-display font-bold">AL</span>
+              <div><div class="font-semibold text-sm">Amanda L.</div><div class="text-xs text-cream/50">Marketing · Cliente desde 2022</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section id="contato" class="relative py-24 md:py-32 bg-ink-soft/40 overflow-hidden">
+  <div class="aurora" style="width:520px;height:520px;background:var(--brand);bottom:-200px;right:-160px;opacity:.28;"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+      <!-- left: info -->
+      <div data-aos="fade-up">
+        <span class="kicker mb-5">Vamos conversar</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tight mt-4 leading-[1.08]">Garanta seu endereço <span class="text-gradient">profissional hoje</span></h2>
+        <p class="mt-5 text-cream/60 text-lg font-light">Fale com a nossa equipe pelo WhatsApp ou preencha o formulário. Respondemos rápido e sem compromisso.</p>
+
+        <div class="mt-9 space-y-4">
+          <a href="https://wa.me/5585989568807" target="_blank" rel="noopener" class="glass rounded-2xl p-5 flex items-center gap-4 hover:border-brand/40 transition-colors group">
+            <span class="w-12 h-12 rounded-xl grid place-items-center bg-[#25D366]/15 text-[#3be07e]"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg></span>
+            <div><div class="text-xs uppercase tracking-wider text-cream/50">WhatsApp</div><div class="font-semibold group-hover:text-brand-light transition-colors">(85) 98956-8807</div></div>
+          </a>
+          <a href="tel:+5585981805678" class="glass rounded-2xl p-5 flex items-center gap-4 hover:border-brand/40 transition-colors group">
+            <span class="w-12 h-12 rounded-xl grid place-items-center bg-brand/15 text-brand-glow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></span>
+            <div><div class="text-xs uppercase tracking-wider text-cream/50">Telefone</div><div class="font-semibold group-hover:text-brand-light transition-colors">(85) 98180-5678</div></div>
+          </a>
+          <a href="https://instagram.com/escritoriovirtualbrazilnet" target="_blank" rel="noopener" class="glass rounded-2xl p-5 flex items-center gap-4 hover:border-brand/40 transition-colors group">
+            <span class="w-12 h-12 rounded-xl grid place-items-center bg-brand/15 text-brand-glow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+            <div><div class="text-xs uppercase tracking-wider text-cream/50">Instagram</div><div class="font-semibold group-hover:text-brand-light transition-colors">@escritoriovirtualbrazilnet</div></div>
+          </a>
+          <div class="glass rounded-2xl p-5 flex items-center gap-4">
+            <span class="w-12 h-12 rounded-xl grid place-items-center bg-brand/15 text-brand-glow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-5.2-7-11a7 7 0 1114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <div><div class="text-xs uppercase tracking-wider text-cream/50">Endereço</div><div class="font-semibold leading-tight">Av. Santos Dumont, 2789 · 10º andar<br><span class="font-normal text-cream/60 text-sm">Aldeota, Fortaleza – CE · 60150-161</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: form + map -->
+      <div data-aos="fade-up" data-aos-delay="100">
+        <form id="leadForm" class="glass rounded-3xl p-7 md:p-9" novalidate>
+          <h3 class="font-display font-semibold text-2xl">Solicite uma proposta</h3>
+          <p class="text-cream/55 text-sm mt-1.5">Preencha e enviaremos os detalhes pelo WhatsApp.</p>
+          <div class="grid sm:grid-cols-2 gap-4 mt-6">
+            <div class="sm:col-span-2"><label class="text-xs uppercase tracking-wider text-cream/50">Nome</label><input name="nome" type="text" required placeholder="Seu nome completo" class="field mt-2"/></div>
+            <div><label class="text-xs uppercase tracking-wider text-cream/50">Telefone</label><input name="telefone" type="tel" required placeholder="(85) 9 9999-9999" class="field mt-2"/></div>
+            <div><label class="text-xs uppercase tracking-wider text-cream/50">E-mail</label><input name="email" type="email" placeholder="voce@email.com" class="field mt-2"/></div>
+            <div class="sm:col-span-2"><label class="text-xs uppercase tracking-wider text-cream/50">Interesse</label>
+              <select name="interesse" class="field mt-2">
+                <option>Endereço fiscal</option>
+                <option>Escritório virtual</option>
+                <option>Sala de reunião</option>
+                <option>Sala privativa</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2"><label class="text-xs uppercase tracking-wider text-cream/50">Mensagem</label><textarea name="mensagem" rows="3" placeholder="Conte um pouco sobre o que você precisa..." class="field mt-2 resize-none"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary w-full font-semibold px-6 py-4 rounded-full mt-6 inline-flex items-center justify-center gap-2.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="text-center text-xs text-cream/40 mt-3">Resposta rápida · Sem compromisso</p>
+        </form>
+
+        <div class="rounded-3xl overflow-hidden border border-brand/15 mt-6 h-[260px]">
+          <iframe title="Localização BrazilNet Coworking" src="https://maps.google.com/maps?q=Av.%20Santos%20Dumont%202789%20Aldeota%20Fortaleza%20CE&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;filter:invert(.92) hue-rotate(160deg) saturate(.8)" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative bg-ink border-t border-brand/10 pt-16 pb-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3">
+          <span class="grid place-items-center w-10 h-10 rounded-full" style="background:linear-gradient(150deg,#3DA8A8,#2A7E7E)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#EDF1F0" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M4.5 7.5h15M4.5 16.5h15"/></svg>
+          </span>
+          <span class="font-display font-bold text-lg">Brazil<span class="font-light text-brand-light">Net</span></span>
+        </div>
+        <p class="mt-5 text-cream/55 font-light max-w-sm leading-relaxed">Escritório virtual e endereço fiscal na Aldeota, Fortaleza. Desde 2014 ajudando pequenas e médias empresas a crescer com estrutura profissional e custo reduzido.</p>
+        <div class="flex gap-3 mt-6">
+          <a href="https://wa.me/5585989568807" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 rounded-full grid place-items-center glass hover:text-brand-light transition-colors"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg></a>
+          <a href="https://instagram.com/escritoriovirtualbrazilnet" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full grid place-items-center glass hover:text-brand-light transition-colors"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="tel:+5585981805678" aria-label="Telefone" class="w-10 h-10 rounded-full grid place-items-center glass hover:text-brand-light transition-colors"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="md:col-span-3 md:col-start-7">
+        <h4 class="font-semibold text-sm uppercase tracking-wider text-cream/50">Navegação</h4>
+        <ul class="mt-4 space-y-2.5 text-cream/65">
+          <li><a href="#servicos" class="hover:text-brand-light transition-colors">Serviços</a></li>
+          <li><a href="#vantagens" class="hover:text-brand-light transition-colors">Vantagens</a></li>
+          <li><a href="#galeria" class="hover:text-brand-light transition-colors">Espaços</a></li>
+          <li><a href="#sobre" class="hover:text-brand-light transition-colors">Sobre</a></li>
+          <li><a href="#depoimentos" class="hover:text-brand-light transition-colors">Depoimentos</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-3">
+        <h4 class="font-semibold text-sm uppercase tracking-wider text-cream/50">Contato</h4>
+        <ul class="mt-4 space-y-2.5 text-cream/65">
+          <li><a href="https://wa.me/5585989568807" target="_blank" rel="noopener" class="hover:text-brand-light transition-colors">(85) 98956-8807</a></li>
+          <li><a href="tel:+5585981805678" class="hover:text-brand-light transition-colors">(85) 98180-5678</a></li>
+          <li class="text-sm text-cream/55 leading-relaxed pt-1">Av. Santos Dumont, 2789 · 10º andar<br>Aldeota, Fortaleza – CE · 60150-161</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-brand/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/40">
+      <p>© <span id="year"></span> BrazilNet Coworking · Escritório Virtual. Todos os direitos reservados.</p>
+      <p>Aldeota · Fortaleza – CE</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCHEMA / STRUCTURED DATA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "BrazilNet Coworking · Escritório Virtual",
+  "description": "Escritório virtual, endereço fiscal e salas de reunião na Aldeota, Fortaleza. Desde 2014 ajudando pequenas e médias empresas com estrutura profissional a partir de R$100/mês.",
+  "url": "https://www.brazilnetcoworking.com.br/",
+  "logo": "https://www.brazilnetcoworking.com.br/assets/brand/favicon.svg",
+  "image": "https://www.brazilnetcoworking.com.br/assets/img/meeting-03.webp",
+  "telephone": "+5585981805678",
+  "foundingDate": "2014",
+  "priceRange": "R$",
+  "areaServed": "Fortaleza - CE",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Santos Dumont, 2789, 10º andar",
+    "addressLocality": "Fortaleza",
+    "addressRegion": "CE",
+    "postalCode": "60150-161",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://instagram.com/escritoriovirtualbrazilnet"],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Endereço Fiscal"}, "price": "100", "priceCurrency": "BRL"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Escritório Virtual"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sala de Reunião"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sala Privativa"}}
+  ]
+}
+</script>
+
+<!-- ============ LIBS ============ -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* ---------- Year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- AOS ---------- */
+AOS.init({ duration: 850, easing: 'ease-out-cubic', once: true, offset: 80, disable: window.innerWidth < 480 ? false : false });
+
+/* ---------- Lenis smooth scroll ---------- */
+let lenis;
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  lenis = new Lenis({ duration: 1.15, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+  function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
+  requestAnimationFrame(raf);
+}
+
+/* ---------- Anchor smooth scroll via Lenis ---------- */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      const el = document.querySelector(id);
+      if (el) { e.preventDefault(); lenis ? lenis.scrollTo(el, { offset: -70 }) : el.scrollIntoView({behavior:'smooth'}); closeMenu(); }
+    }
+  });
+});
+
+/* ---------- Navbar scroll state ---------- */
+const navbar = document.getElementById('navbar');
+function onScroll(){
+  if (window.scrollY > 30) navbar.classList.add('glass-nav','shadow-lg','py-1');
+  else navbar.classList.remove('glass-nav','shadow-lg','py-1');
+}
+window.addEventListener('scroll', onScroll); onScroll();
+
+/* ---------- Mobile menu ---------- */
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+function closeMenu(){ mobileMenu.classList.add('hidden-menu'); }
+menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden-menu'));
+document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', closeMenu));
+
+/* ---------- GLightbox ---------- */
+GLightbox({ selector: '.glightbox', loop: true, touchNavigation: true, zoomable: true });
+
+/* ---------- Swiper testimonials ---------- */
+new Swiper('.testimonials-swiper', {
+  slidesPerView: 1, spaceBetween: 24, grabCursor: true,
+  loop: true, autoplay: { delay: 4200, disableOnInteraction: false },
+  pagination: { el: '.swiper-pagination', clickable: true },
+  breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+});
+
+/* ---------- GSAP hero intro ---------- */
+gsap.registerPlugin(ScrollTrigger);
+const introTl = gsap.timeline({ defaults: { ease: 'power4.out' } });
+introTl
+  .from('.hero-line', { yPercent: 110, opacity: 0, duration: 1.05, stagger: 0.12 }, 0.1)
+  .from('.hero-el', { y: 26, opacity: 0, duration: 0.85, stagger: 0.12 }, 0.45);
+
+/* ---------- Hero parallax ---------- */
+gsap.to('#heroImg', {
+  yPercent: 14, ease: 'none',
+  scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true }
+});
+
+/* ---------- CountUp (custom, lightweight) ---------- */
+function animateCount(el){
+  const to = +el.dataset.to;
+  const sep = el.dataset.sep === '' ? false : true;
+  const dur = 1600; const start = performance.now();
+  function tick(now){
+    const p = Math.min((now - start) / dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const val = Math.floor(eased * to);
+    el.textContent = sep ? val.toLocaleString('pt-BR') : val;
+    if (p < 1) requestAnimationFrame(tick); else el.textContent = sep ? to.toLocaleString('pt-BR') : to;
+  }
+  requestAnimationFrame(tick);
+}
+const counters = document.querySelectorAll('.count');
+const cObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); cObs.unobserve(e.target); } });
+}, { threshold: 0.5 });
+counters.forEach(c => cObs.observe(c));
+
+/* ---------- Feature card spotlight ---------- */
+document.querySelectorAll('.feature-card').forEach(card => {
+  card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    card.style.setProperty('--my', `${e.clientY - r.top}px`);
+  });
+});
+
+/* ---------- Tilt on floating glass stat ---------- */
+if (window.VanillaTilt) {
+  VanillaTilt.init(document.querySelectorAll('.glass[data-aos="zoom-in"]'), { max: 6, speed: 400, glare: true, 'max-glare': 0.15 });
+}
+
+/* ---------- Lead form -> WhatsApp ---------- */
+document.getElementById('leadForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = e.target;
+  const nome = f.nome.value.trim();
+  const tel = f.telefone.value.trim();
+  if (!nome || !tel) { f.reportValidity(); return; }
+  const lines = [
+    `Olá! Sou ${nome} e tenho interesse em ${f.interesse.value} na BrazilNet.`,
+    f.email.value ? `E-mail: ${f.email.value}` : '',
+    `Telefone: ${tel}`,
+    f.mensagem.value ? `Mensagem: ${f.mensagem.value}` : ''
+  ].filter(Boolean);
+  window.open(`https://wa.me/5585989568807?text=${encodeURIComponent(lines.join('\n'))}`, '_blank');
+});
+
+/* ---------- ScrollTrigger refresh after load ---------- */
+window.addEventListener('load', () => ScrollTrigger.refresh());
+</script>
+</body>
+</html>
