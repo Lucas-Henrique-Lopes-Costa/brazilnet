@@ -274,22 +274,33 @@ body{
 <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
   <!-- background image w/ parallax -->
   <div class="absolute inset-0 z-0">
-    <img id="heroImg" src="assets/img/meeting-03.webp" alt="Sala de reunião da BrazilNet Coworking na Aldeota, Fortaleza" class="w-full h-[120%] object-cover scale-105"/>
-    <div class="absolute inset-0" style="background:linear-gradient(110deg, rgba(6,16,15,.95) 0%, rgba(8,22,21,.82) 42%, rgba(8,22,21,.55) 100%)"></div>
-    <div class="absolute inset-0" style="background:linear-gradient(to top, var(--ink) 2%, transparent 40%)"></div>
+    <img id="heroImg" src="assets/img/fortaleza-hero.webp" alt="Orla de Fortaleza ao entardecer com farol à beira-mar" class="w-full h-[118%] object-cover object-center scale-105"/>
+    <!-- legibility + brand harmonisation -->
+    <div class="absolute inset-0" style="background:linear-gradient(100deg, rgba(6,16,15,.96) 0%, rgba(7,19,18,.85) 38%, rgba(8,22,21,.45) 68%, rgba(10,26,24,.25) 100%)"></div>
+    <div class="absolute inset-0 mix-blend-soft-light" style="background:linear-gradient(115deg, rgba(61,168,168,.55) 0%, transparent 55%)"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(to top, var(--ink) 0%, rgba(12,23,22,.4) 22%, transparent 48%)"></div>
+    <div class="absolute inset-0" style="box-shadow:inset 0 0 220px 60px rgba(4,12,11,.7)"></div>
   </div>
-  <div class="aurora" style="width:520px;height:520px;background:var(--brand);top:-120px;right:-120px;"></div>
+  <div class="aurora" style="width:540px;height:540px;background:var(--brand);top:-160px;left:-140px;opacity:.4;"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 w-full pt-28 pb-20">
+  <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 w-full pt-32 pb-28 md:pb-32">
     <div class="max-w-3xl">
-      <span class="kicker mb-6 hero-el" data-d="0">Desde 2014 · Aldeota, Fortaleza</span>
-      <h1 class="font-display font-extrabold leading-[1.02] tracking-tight text-[2.7rem] sm:text-6xl lg:text-7xl mt-5">
+      <!-- badge -->
+      <div class="hero-el inline-flex items-center gap-2.5 glass rounded-full pl-2 pr-4 py-1.5 text-sm" data-d="0">
+        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brand/25 text-brand-glow">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-7-5.2-7-11a7 7 0 1114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        </span>
+        <span class="text-cream/80">Desde <strong class="text-cream font-semibold">2014</strong> na Aldeota, Fortaleza</span>
+      </div>
+
+      <h1 class="font-display font-extrabold leading-[1.0] tracking-tight text-[2.85rem] sm:text-6xl lg:text-[5rem] mt-7" style="text-shadow:0 18px 60px rgba(0,0,0,.45)">
         <span class="block hero-line">Um endereço</span>
         <span class="block hero-line text-gradient">à altura da</span>
         <span class="block hero-line">sua empresa.</span>
       </h1>
-      <p class="mt-7 text-lg md:text-xl text-cream/70 font-light max-w-xl hero-el" data-d="1">
-        Escritório virtual, endereço fiscal e salas de reunião com estrutura profissional — a partir de <span class="text-brand-light font-medium">R$100/mês</span>, sem IPTU e com toda a sua correspondência gerenciada.
+
+      <p class="mt-7 text-lg md:text-xl text-cream/75 font-light max-w-xl leading-relaxed hero-el" data-d="1">
+        Escritório virtual, endereço fiscal e salas de reunião com estrutura profissional no coração de Fortaleza — a partir de <span class="text-brand-glow font-medium">R$100/mês</span>, sem IPTU e com toda a sua correspondência gerenciada.
       </p>
 
       <div class="mt-9 flex flex-wrap items-center gap-4 hero-el" data-d="2">
@@ -303,30 +314,41 @@ body{
         </a>
       </div>
 
-      <!-- HERO STATS -->
-      <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl hero-el" data-d="3">
-        <div>
-          <div class="font-display font-bold text-3xl md:text-4xl text-cream stat-num"><span class="count" data-to="2014" data-sep="">0</span></div>
-          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">Desde</div>
-        </div>
-        <div>
-          <div class="font-display font-bold text-3xl md:text-4xl text-cream stat-num">R$<span class="count" data-to="100">0</span></div>
-          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">Endereço/mês</div>
-        </div>
-        <div>
-          <div class="font-display font-bold text-3xl md:text-4xl text-cream stat-num"><span class="count" data-to="10">0</span>º</div>
-          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">Andar · Aldeota</div>
-        </div>
-        <div>
-          <div class="font-display font-bold text-3xl md:text-4xl text-brand-light stat-num">0</div>
-          <div class="text-xs uppercase tracking-wider text-cream/50 mt-1">IPTU a pagar</div>
+      <!-- HERO STATS (glass bar) -->
+      <div class="mt-12 hero-el" data-d="3">
+        <div class="glass rounded-2xl px-6 py-5 inline-flex flex-wrap items-center gap-x-8 gap-y-5 shadow-xl">
+          <div class="pr-6">
+            <div class="font-display font-bold text-3xl md:text-[2rem] text-cream stat-num leading-none"><span class="count" data-to="2014" data-sep="">0</span></div>
+            <div class="text-[11px] uppercase tracking-wider text-cream/55 mt-1.5">Anos de história</div>
+          </div>
+          <div class="hidden sm:block w-px h-10 bg-brand/20"></div>
+          <div class="pr-6 sm:pr-0">
+            <div class="font-display font-bold text-3xl md:text-[2rem] text-cream stat-num leading-none">R$<span class="count" data-to="100">0</span></div>
+            <div class="text-[11px] uppercase tracking-wider text-cream/55 mt-1.5">Endereço fiscal/mês</div>
+          </div>
+          <div class="hidden sm:block w-px h-10 bg-brand/20"></div>
+          <div class="pr-6 sm:pr-0">
+            <div class="font-display font-bold text-3xl md:text-[2rem] text-cream stat-num leading-none"><span class="count" data-to="10">0</span>º</div>
+            <div class="text-[11px] uppercase tracking-wider text-cream/55 mt-1.5">Andar · Aldeota</div>
+          </div>
+          <div class="hidden sm:block w-px h-10 bg-brand/20"></div>
+          <div>
+            <div class="font-display font-bold text-3xl md:text-[2rem] text-brand-glow stat-num leading-none">0</div>
+            <div class="text-[11px] uppercase tracking-wider text-cream/55 mt-1.5">IPTU a pagar</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- location chip -->
+  <div class="hidden lg:flex hero-el items-center gap-2.5 glass rounded-full px-4 py-2 absolute bottom-10 right-8 z-10" data-d="3">
+    <span class="w-2 h-2 rounded-full bg-brand-glow animate-pulse"></span>
+    <span class="text-xs tracking-wide text-cream/75">Fortaleza · Ceará</span>
+  </div>
+
   <!-- scroll cue -->
-  <a href="#parceiros" class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-cream/40 hover:text-cream/80 transition-colors">
+  <a href="#servicos" class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-cream/40 hover:text-cream/80 transition-colors">
     <span class="text-[10px] uppercase tracking-[0.3em]">Role</span>
     <span class="w-5 h-8 rounded-full border border-cream/25 flex justify-center pt-1.5"><span class="w-1 h-1.5 rounded-full bg-brand-light animate-bounce"></span></span>
   </a>
