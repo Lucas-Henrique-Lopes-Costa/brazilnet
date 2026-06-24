@@ -216,8 +216,13 @@ body{
 .stat-num{ font-variant-numeric:tabular-nums; }
 
 /* ---------- Mobile menu ---------- */
-#mobileMenu{ transition:opacity .4s, transform .4s; }
-#mobileMenu.hidden-menu{ opacity:0; pointer-events:none; transform:translateY(-12px); }
+#mobileMenu{
+  position:absolute; top:100%; left:0; right:0;
+  background:rgba(7,15,14,.94);
+  box-shadow:0 24px 40px -20px rgba(0,0,0,.7);
+  transition:opacity .35s ease, transform .35s ease, visibility .35s;
+}
+#mobileMenu.hidden-menu{ opacity:0; visibility:hidden; pointer-events:none; transform:translateY(-10px); }
 
 @media (max-width:768px){
   .marquee{ gap:2rem; }
