@@ -29,8 +29,8 @@ Todo o conteúdo (serviços, vantagens, história, contato) vem do briefing em `
 As fotos são reais dos espaços, em `assets/img/`.
 
 ### Contato
-- WhatsApp: (85) 98956-8807
-- Telefone: (85) 98180-5678
+- WhatsApp: (85) 99984-9999
+- Telefone: (85) 99984-9999
 - Instagram: [@escritoriovirtualbrazilnet](https://instagram.com/escritoriovirtualbrazilnet)
 - Endereço: Av. Santos Dumont, 2789 · 10º andar — Aldeota, Fortaleza – CE · 60150-161
 
